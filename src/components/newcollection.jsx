@@ -70,10 +70,10 @@ export function NewCollection(props) {
             <div className="card-body">
 
                 <h5 className="card-title">{currentProduct?.title}</h5>
-                <p className="card-text">{currentProduct?.description}</p>
+                <p className="card-text">{currentProduct?.description.slice(0, 150).concat('...')}</p>
             </div>
             <div className="card-footer">
-                <button class="btn btn-outline-light"onClick={handlePrev}>Precédent</button>
+                <button className="btn btn-outline-light"onClick={handlePrev}>Precédent</button>
                 <button className= "btn btn-outline-light"onClick={handleNext}>Suivant</button>
 
             </div>
